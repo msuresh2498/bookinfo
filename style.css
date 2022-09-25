@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: linear-gradient(rgb(43, 197, 220),rgb(204, 222, 225));
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+#cards, #item{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.image{
+    width: 95%;
+    height: 40%;
+    position: relative;
+}
+.card{
+    display: flex;
+    width: 25%;
+    height: 40%;
+    box-shadow: 0 0 4px 2px rgb(43, 197, 220);
+    text-align: center;
+    padding: 5px;   
+    margin: 10px ;
+    
+}
+.card::after, .card::before{
+    content:" ";
+    width:10px;
+    height:10px;
+    position:absolute;
+    border :0px solid #fff;
+    transition:all 1s;
+}
+
+.title{
+    font-size: 20px;
+    color: red;
+    text-shadow:  1px 1px 1px black;
+}
+.author,.publisher{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 1px;
+    font-size: 18px;
+}
+
+.pages,.pages,.isbn,.char,.reldate{
+    margin: 0px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+}
+.navbar{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    font-size: 50px;
+}
+a{
+    display: flex;
+    text-align: center;
+
+}
+
+.card:hover{
+    width: 40%;
+    height: 75%;
+    text-align: center;
+    padding: 10px;
+    transition: 1.5s;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    border: 5px solid black;
+}
+
+.pages:hover,.pages:hover,.isbn:hover,.char:hover,.reldate:hover,.author:hover,.publisher:hover{
+    margin: 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
